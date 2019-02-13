@@ -65,7 +65,7 @@ public class EncryptionTest {
     {
         EncryptionTest td= new EncryptionTest();
 
-        String target="anotheruser";
+        String target="administrator";
         String encrypted=td.encrypt(target);
         String decrypted=td.decrypt(encrypted);
 

@@ -142,9 +142,15 @@ public class PasswordChange extends javax.swing.JFrame {
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         if(Npword.getText().equals(Cnpword.getText())){
+            String resetPassword = "";
+            try {
                 //check password inserted is conrimed
-                
-                    String querry = "UPDATE `users` SET `password` = "+Npword.getText()+"WHERE `usename` = '"+Uname.getText()+"'";
+                resetPassword = new Encryption().encrypt(Npword.getText());
+            } catch (Exception ex) {
+                Logger.getLogger(PasswordChange.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                    String querry = "UPDATE `users` SET `password` = '"+resetPassword+"' WHERE `username` = '"+Uname.getText()+"';";
+                    System.out.println(querry);
                     Connection con = new DBConnector().connect();
                     try {
                         PreparedStatement pst = con.prepareStatement(querry);
@@ -211,7 +217,7 @@ public class PasswordChange extends javax.swing.JFrame {
     private javax.swing.JPasswordField Opword;
     private javax.swing.JTextField Uname;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private static javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

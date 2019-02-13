@@ -27,11 +27,11 @@
           <Component id="jLabel1" alignment="1" pref="608" max="32767" attributes="0"/>
           <Component id="data" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="1" attributes="0">
-              <Component id="Logout" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
+              <Component id="Logout" min="-2" pref="79" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
               <Component id="simulation" pref="427" max="32767" attributes="0"/>
-              <EmptySpace min="-2" max="-2" attributes="0"/>
-              <Component id="exit" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="exit" min="-2" pref="78" max="-2" attributes="0"/>
           </Group>
           <Component id="Management" alignment="0" max="32767" attributes="0"/>
           <Component id="Analysis" alignment="0" max="32767" attributes="0"/>
@@ -58,8 +58,8 @@
               <Component id="Management" pref="37" max="32767" attributes="0"/>
               <EmptySpace min="-2" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="simulation" pref="44" max="32767" attributes="0"/>
                   <Component id="exit" max="32767" attributes="0"/>
+                  <Component id="simulation" alignment="0" min="-2" pref="44" max="-2" attributes="0"/>
                   <Component id="Logout" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>

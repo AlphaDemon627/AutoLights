@@ -5,7 +5,6 @@
  */
 package AutoLightsUI;
 
-import autolightstests.ArrayTime;
 import autolightstests.PrintTest;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
@@ -25,7 +24,6 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.JTable;
 
 /**
  *

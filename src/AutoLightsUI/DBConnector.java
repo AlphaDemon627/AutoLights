@@ -8,6 +8,7 @@ package AutoLightsUI;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import javax.swing.JOptionPane;
 
 
 /**
@@ -34,6 +35,7 @@ public class DBConnector {
             return db_connect;
         }else{
             System.out.println("An unknown error occured");
+            JOptionPane.showMessageDialog(null,"Cannot connect to Database");
             return null;
         }
     }
